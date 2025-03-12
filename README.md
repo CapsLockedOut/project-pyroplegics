@@ -1,10 +1,10 @@
 PyroPlegics. 
 A game made by: 
+- Benjamin Namayandeh
 - Aly Soliman
 - Web Nguyen
 - Kian Pine
 - Leo Yang
-- Benjamin Namayandeh
 
 - This game was created as a SE2250B-(Software Construction) Project.
 
