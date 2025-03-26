@@ -20,14 +20,18 @@ public class TempPlayerScript : MonoBehaviour
 
     void Update()
     {
+        // read mouse input
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
 
+        // move current orientation by 'mouse input amount'
         yRotation += mouseX;
         xRotation += mouseY;
 
+        // prevent player looking too far upwards/downwards
         xRotation = Mathf.Clamp(xRotation, -90f, 100f);
 
+        // apply rotation
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
