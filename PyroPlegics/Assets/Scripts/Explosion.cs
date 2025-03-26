@@ -10,10 +10,13 @@ public class Explosion : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("collide");
         Vector3 explosionPosition = transform.position;
 
         // Get all colliders within the explosion radius
         Collider[] colliders = Physics.OverlapSphere(explosionPosition, explosionRadius);
+        Debug.Log(colliders.Length);
+
         foreach (Collider hit in colliders)
         {
             // Look for any Rigidbody in the colliders (for instance, the player's Rigidbody)

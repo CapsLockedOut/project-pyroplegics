@@ -4,6 +4,8 @@ using UnityEngine.InputSystem; // Import the new Input System
 // Attach this to your weapon (child of the camera)
 public class BulletShooter : MonoBehaviour
 {
+    public Transform cameraPosition;
+
     [Header("Bullet Settings")]
     public float bulletSpeed = 20f;          // Speed at which the bullet will travel
     public GameObject bulletPrefab;          // The bullet prefab to instantiate
