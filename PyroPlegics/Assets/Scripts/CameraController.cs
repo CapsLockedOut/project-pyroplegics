@@ -29,7 +29,7 @@ public class TempPlayerScript : MonoBehaviour
 
         // move current orientation by 'mouse input amount'
         yRotation += mouseX;
-        xRotation += mouseY;
+        xRotation -= mouseY;
 
         // prevent player looking too far upwards/downwards
         xRotation = Mathf.Clamp(xRotation, -90f, 100f);
