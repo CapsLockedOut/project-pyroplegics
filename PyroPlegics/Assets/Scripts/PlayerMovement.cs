@@ -14,8 +14,6 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode jumpKey = KeyCode.Space;
 
     [Header("Ground Check")]
-    public LayerMask whatIsGround;
-    public float playerHeight;
     bool onGround;
 
     public Transform orientation;
@@ -41,15 +39,13 @@ public class PlayerMovement : MonoBehaviour
 
         // midair movement
         if(!onGround)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f,
+                        ForceMode.Force);
     }
 
     void Update()
     {
-        // check if on ground via raycast from camera pos to ground
-        onGround = Physics.Raycast(transform.position, Vector3.down,
-                                   playerHeight * 0.5f + 0.2f, whatIsGround);
-
+        // read movement input
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
@@ -59,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
             readyToJump = false;
 
             // reset y velocity, then jump
-            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f,
+                                            rb.linearVelocity.z);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
 
             // allows for continous jumping
@@ -75,5 +72,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void ResetJump() {
         readyToJump = true;
+    }
+
+    // temp solution to onGround detection
+    // there's weird edgecase (dunno when it happens) where the collision enter
+    // is undetected
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Ground")
+            onGround = true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.name == "Ground")
+            onGround = false;
     }
 }

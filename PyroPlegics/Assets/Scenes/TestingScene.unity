@@ -131,8 +131,8 @@ GameObject:
   - component: {fileID: 62117165}
   - component: {fileID: 62117164}
   - component: {fileID: 62117163}
-  m_Layer: 10
-  m_Name: Plane
+  m_Layer: 0
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,13 +221,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62117162}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 3.39, y: 1.16, z: 0.8453467}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &201467302
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +283,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.8842602, y: 1.785, z: 1.880668}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1518638654}
@@ -306,12 +306,8 @@ MonoBehaviour:
   moveSpeed: 2
   drag: 2
   jumpForce: 6
-  jumpCooldown: 1.25
+  jumpCooldown: 1.5
   jumpKey: 32
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 1024
-  playerHeight: 1.65
   orientation: {fileID: 1096156338}
 --- !u!1 &705507993
 GameObject:
@@ -744,7 +740,7 @@ GameObject:
   - component: {fileID: 1307727602}
   - component: {fileID: 1307727601}
   - component: {fileID: 1307727600}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
