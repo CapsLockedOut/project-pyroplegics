@@ -153,3 +153,4 @@ MonoBehaviour:
   explosionRadius: 6
   upwardModifier: 0
   additionalHorizontalForce: 200
+  bulletPrefab: {fileID: 3985143132328328737, guid: 14a2687d449e7321f9a6acb67a996eda, type: 3}
