@@ -46,7 +46,11 @@ public class PlayerMovement : MonoBehaviour
         // checks for dialogue - prevents player from jumping
         if (!readyToDialgoue)
         {
-            readyToDialgoue = false;
+            readyToJump = true;
+        }
+        else
+        {
+            readyToJump = false;
         }
     }
 

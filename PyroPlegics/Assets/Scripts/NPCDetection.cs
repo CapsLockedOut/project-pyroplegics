@@ -12,9 +12,11 @@ public class NPCDetection : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E) && !PlayerMovement.readyToDialgoue)
         {
+            canva.SetActive(true);
             PlayerMovement.readyToDialgoue = true;
             NewDialgoue("Hi!");
             NewDialgoue("This is a test.");
+            NewDialgoue("Goodbye World!");
             canva.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
