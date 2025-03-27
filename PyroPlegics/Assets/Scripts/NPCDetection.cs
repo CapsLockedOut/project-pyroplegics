@@ -15,7 +15,7 @@ public class NPCDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (CompareTag("Player") && other.CompareTag("NPC"))
+        if (other.name == "PlayerObject")
         {
             playerInRange = true;
         }   
