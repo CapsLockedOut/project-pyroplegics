@@ -11,9 +11,6 @@ public class BulletShooter : MonoBehaviour
     [Header("Fire Point")]
     public Transform firePoint;              // The transform from which the bullet will be fired
 
-    public Transform orientation;
-    public Transform cameraPosition;
-
     void Update()
     {
         // Check for left mouse button press using the new Input System

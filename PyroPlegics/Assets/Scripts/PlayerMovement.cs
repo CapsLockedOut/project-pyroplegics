@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed;
-    public float drag;
+    public float friction;
 
     public float jumpForce;
     public float jumpCooldown;
@@ -64,10 +64,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // handle friction; to be done by individual platforms in the future?
-        if(!onGround)
-            rb.linearDamping = drag;
+        if(onGround)
+            rb.linearDamping = friction;
         else
-            rb.linearDamping = drag * 2;
+            rb.linearDamping = 0;
     }
 
     private void ResetJump() {
