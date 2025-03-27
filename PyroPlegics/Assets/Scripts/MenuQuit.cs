@@ -1,16 +1,24 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MenuQuit : MonoBehaviour
+public class QuitButton : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // Get the Button component and add a listener to it
+        Button btn = GetComponent<Button>();
+        if (btn != null)
+        {
+            btn.onClick.AddListener(QuitGame);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame()
     {
+        // Log a message to console (useful for testing in the editor)
+        Debug.Log("Game is quitting...");
         
+        // Quit the application
+        Application.Quit();
     }
 }
