@@ -11,10 +11,12 @@ public class WeaponController : MonoBehaviour
     void Start()
     {
         unlocked[0] = true;
+        // temp on true
         unlocked[1] = true;
         unlocked[2] = true;
     }
 
+    // check for number key press
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1) && unlocked[0])
@@ -29,12 +31,12 @@ public class WeaponController : MonoBehaviour
 
     void SwitchWeapon(GameObject weapon)
     {
-        Debug.Log("Does this work?");
-
+        // deactivate all weapons
         rocketLauncher.SetActive(false);
         quadLauncher.SetActive(false);
         grenadeLauncher.SetActive(false);
 
+        // activate desired weapon
         weapon.SetActive(true);
     }
 
