@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class Explosion : MonoBehaviour
+public class ExplosiveProjectile : MonoBehaviour
 {
     [Header("Explosion Settings")]
-    public float explosionForce = 500f;         // Base explosion force
-    public float explosionRadius = 5f;          // Radius within which objects are affected
-    public float upwardModifier = 2f;           // Additional upward force for a stronger rocket jump
-    public float additionalHorizontalForce = 200f; // Extra horizontal force to boost lateral movement
+    public float explosionForce;         // Base explosion force
+    public float explosionRadius;          // Radius within which objects are affected
+    public float upwardModifier;           // Additional upward force for a stronger rocket jump
+    public float additionalHorizontalForce; // Extra horizontal force to boost lateral movement
 
-    void OnCollisionEnter(Collision collision)
+    public void Explode()
     {
         Vector3 explosionPosition = transform.position;
 

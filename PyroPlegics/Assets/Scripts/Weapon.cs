@@ -2,10 +2,13 @@ using UnityEngine;
 using UnityEngine.InputSystem; // Import the new Input System
 
 // Attach this to your weapon (child of the camera)
-public class BulletShooter : MonoBehaviour
+public class Weapon : MonoBehaviour
 {
+    private bool canFire = true;
+    private GameObject bulletInstance;
+
     [Header("Bullet Settings")]
-    public float bulletSpeed;          // Speed at which the bullet will travel
+    public float bulletSpeed;                // Speed at which the bullet will travel
     public float fireInterval;
     public GameObject bulletPrefab;          // The bullet prefab to instantiate
 
@@ -15,7 +18,7 @@ public class BulletShooter : MonoBehaviour
     void Update()
     {
         // Check for left mouse button press using the new Input System
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame && !PlayerMovement.readyToDialgoue)
         {
             Shoot();
         }
@@ -24,8 +27,13 @@ public class BulletShooter : MonoBehaviour
     // Method to handle shooting
     void Shoot()
     {
+        if(!canFire)
+            return;
+
+        canFire = false;
+
         // Instantiate the bullet prefab at the fire point's position and rotation
-        GameObject bulletInstance = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        bulletInstance = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
         // Try to get the Rigidbody component from the instantiated bullet
         Rigidbody rb = bulletInstance.GetComponent<Rigidbody>();
@@ -40,5 +48,11 @@ public class BulletShooter : MonoBehaviour
         {
             Debug.LogWarning("Bullet prefab is missing a Rigidbody component.");
         }
+
+        Invoke(nameof(ResetFire), fireInterval);
+    }
+
+    private void ResetFire() {
+        canFire = true;
     }
 }
