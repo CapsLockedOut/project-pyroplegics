@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c2f88cc-f7d1-4a91-be85-68a10015fca6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PyroPlegics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PyroPlegics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 4.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "AlyLevel2-assets",
+    "git-widget-placeholder": "ben-bossfight",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,7 +58,7 @@
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -68,7 +66,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -125,6 +123,7 @@
       <workItem from="1743010819969" duration="6000" />
       <workItem from="1743011350753" duration="2398000" />
       <workItem from="1743020694216" duration="989000" />
+      <workItem from="1743050128494" duration="67000" />
     </task>
     <servers />
   </component>
