@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float jumpCooldown;
     bool readyToJump = true;
+    static public bool readyToDialgoue = false;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
@@ -41,6 +42,12 @@ public class PlayerMovement : MonoBehaviour
         if(!onGround)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f,
                         ForceMode.Force);
+        
+        // checks for dialogue - prevents player from jumping
+        if (!readyToDialgoue)
+        {
+            readyToDialgoue = false;
+        }
     }
 
     void Update()
