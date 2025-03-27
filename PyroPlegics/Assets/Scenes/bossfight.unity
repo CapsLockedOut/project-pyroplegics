@@ -838,6 +838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112cea6bd2f426f44b512c419ff5e4b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocketLauncher: {fileID: 1584982327}
+  quadLauncher: {fileID: 719275613}
+  grenadeLauncher: {fileID: 1867437405}
 --- !u!1 &1346263924
 GameObject:
   m_ObjectHideFlags: 0

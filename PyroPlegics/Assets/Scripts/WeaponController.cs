@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public static class WeaponController : MonoBehaviour
+public class WeaponController : MonoBehaviour
 {
     public GameObject rocketLauncher;
     public GameObject quadLauncher;
     public GameObject grenadeLauncher;
 
-    private bool unlocked = new bool[3];
+    private bool[] unlocked = new bool[3];
 
     void Start()
     {
@@ -20,15 +20,17 @@ public static class WeaponController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha1) && unlocked[0])
             SwitchWeapon(rocketLauncher);
 
-        else if(Input.GetKeyDown(KeyCode.Alpha2 && unlocked[1]))
+        else if(Input.GetKeyDown(KeyCode.Alpha2) && unlocked[1])
             SwitchWeapon(quadLauncher);
 
-        else if(Input.GetKeyDown(KeyCode.Alpha3 && unlocked[2]))
+        else if(Input.GetKeyDown(KeyCode.Alpha3) && unlocked[2])
             SwitchWeapon(grenadeLauncher);
     }
 
     void SwitchWeapon(GameObject weapon)
     {
+        Debug.Log("Does this work?");
+
         rocketLauncher.SetActive(false);
         quadLauncher.SetActive(false);
         grenadeLauncher.SetActive(false);
