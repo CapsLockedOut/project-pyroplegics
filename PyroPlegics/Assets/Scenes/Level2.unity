@@ -465,6 +465,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2274448285279516050, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065095861773714141, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3095647358903705705, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330609664688203681, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835545230253212963, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124301813621747155, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802403303133898550, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8972389919144895778, guid: 88908f5ba0ade864a96e29ad85fd4b04, type: 3}
       propertyPath: m_Name
       value: Paraplegic
