@@ -18,7 +18,7 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         // Check for left mouse button press using the new Input System
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame && !PlayerMovement.readyToDialgoue)
         {
             Shoot();
         }

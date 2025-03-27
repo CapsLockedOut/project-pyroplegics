@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b4c20f1e9e331f64f9b953f5c947c1c4
+guid: def8deaa726ec8046a819aee6699e6fe
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Shadows Into Light
+  - Sigmar
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
