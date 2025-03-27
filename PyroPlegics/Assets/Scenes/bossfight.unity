@@ -331,6 +331,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &719275613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118591436729238780, guid: 2e4d1574d0ed9de1b9e1ee5247f3a432, type: 3}
+  m_PrefabInstance: {fileID: 134120348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941514938
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112cea6bd2f426f44b512c419ff5e4b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocketLauncher: {fileID: 1584982327}
+  quadLauncher: {fileID: 719275613}
+  grenadeLauncher: {fileID: 1867437405}
 --- !u!1 &1346263924
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +670,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1584982327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5912669155112432007, guid: 2e4d1574d0ed9de1b9e1ee5247f3a432, type: 3}
+  m_PrefabInstance: {fileID: 134120348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1586818643
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +783,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1867437405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3576440425889479316, guid: 2e4d1574d0ed9de1b9e1ee5247f3a432, type: 3}
+  m_PrefabInstance: {fileID: 134120348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1908283990
 GameObject:
   m_ObjectHideFlags: 0
