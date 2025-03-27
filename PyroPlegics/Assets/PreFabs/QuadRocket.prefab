@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 4563968057521512338}
   - component: {fileID: -3568890545119715257}
   m_Layer: 0
-  m_Name: Rocket
-  m_TagString: Rocket
+  m_Name: QuadRocket
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ca919bd8a6f4940aff51a6b9ebb9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 15
-  explosionRadius: 15
+  explosionForce: 6
+  explosionRadius: 8
   upwardModifier: 1
-  additionalHorizontalForce: 10
+  additionalHorizontalForce: 2
