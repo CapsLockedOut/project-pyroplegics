@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 48870789}
   - component: {fileID: 48870788}
   - component: {fileID: 48870787}
+  - component: {fileID: 48870791}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -221,6 +222,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &48870791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48870786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fea3f14fbe2134ab348c32d3ba76ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &62117162
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49da9d83e2055cf46ba3de919416afc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueTemplate: {fileID: 1388990538}
+  canva: {fileID: 48870786}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,8 +949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: -163.7657}
-  m_SizeDelta: {x: 851.6, y: 152.6686}
+  m_AnchoredPosition: {x: 1.9119, y: -405.7021}
+  m_SizeDelta: {x: 1919.424, y: 267.2644}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1156773471
 MonoBehaviour:
@@ -1725,8 +1740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0106, y: -163.1472}
-  m_SizeDelta: {x: 832.0212, y: 132.2944}
+  m_AnchoredPosition: {x: 1.1918, y: -402.8801}
+  m_SizeDelta: {x: 1876.4045, y: 226.0546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588054731
 MonoBehaviour:
@@ -1775,8 +1790,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
