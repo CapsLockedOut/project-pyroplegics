@@ -5,7 +5,8 @@ using UnityEngine.InputSystem; // Import the new Input System
 public class BulletShooter : MonoBehaviour
 {
     [Header("Bullet Settings")]
-    public float bulletSpeed = 20f;          // Speed at which the bullet will travel
+    public float bulletSpeed;          // Speed at which the bullet will travel
+    public float fireInterval;
     public GameObject bulletPrefab;          // The bullet prefab to instantiate
 
     [Header("Fire Point")]
