@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -10,36 +11,32 @@ public class NPCDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check if the player is in range and presses the E key to start dialogue
         if (playerInRange && Input.GetKeyDown(KeyCode.E) && !PlayerMovement.readyToDialgoue)
         {
+            // Start the dialogue
             canva.SetActive(true);
             PlayerMovement.readyToDialgoue = true;
-            NewDialgoue("Hi!");
-            NewDialgoue("This is a test.");
-            NewDialgoue("Goodbye World!");
-            canva.transform.GetChild(1).gameObject.SetActive(true);
+
+            // Initialize the dialogue system in the NextDialogue script
+            var nextDialogue = canva.GetComponentInChildren<NextDialogue>();
+            if (nextDialogue != null)
+            {
+                nextDialogue.StartDialogue();
+            }
         }
     }
 
-    void NewDialgoue(string text)
-    {
-        GameObject templateClone = Instantiate(dialogueTemplate, dialogueTemplate.transform);
-        templateClone.transform.parent = canva.transform;
-        templateClone.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = text;
-    }
-    
-    
     private void OnTriggerEnter(Collider other)
     {
         if (other.name == "PlayerObject")
         {
             playerInRange = true;
-        }   
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         playerInRange = false;
     }
-    
 }

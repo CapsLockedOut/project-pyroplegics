@@ -11,8 +11,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCDetection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PyroPlegics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PyroPlegics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletShooter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletShooter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCDetection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NextDialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NextDialogue.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
