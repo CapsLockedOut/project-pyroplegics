@@ -21,6 +21,14 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        // checks for dialogue - prevents camera movement
+        if (PlayerMovement.readyToDialgoue)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            return;
+        }
+        
         transform.position = cameraPosition.position;
 
         // read mouse input
@@ -37,5 +45,8 @@ public class CameraController : MonoBehaviour
         // apply rotation
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = false;
     }
 }
