@@ -467,7 +467,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hi Dante! Welcome to the Testing
+  m_text: 'Hi Dante! Welcome to the Testing Centre.
+
+
+    This is where you can practice
+    your jumping mechanics, along with playing around with the weapons you''ll come
+    arcross as you complete certain levels.
+
+
+    Weapon Controls - Click ''Left
+    Mouse Button'' to shoot:
+
+    Press ''1'': Rocket Launcher
+
+    Press ''2'':
+    Quad Launcher
+
+    Press ''3'': Grenade Launcher - Click ''Right Mouse Button''
+    to detonate the grenade
+
+
+    Have fun!
+
+    (Click ''Left Mouse Button'' to
+    close dialogue)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
