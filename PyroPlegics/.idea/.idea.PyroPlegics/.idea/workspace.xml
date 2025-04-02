@@ -4,52 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c2f88cc-f7d1-4a91-be85-68a10015fca6" name="Changes" comment="">
+    <list default="true" id="88d48715-9441-48d7-84b2-0bc09b75bb7b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PyroPlegics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PyroPlegics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneChangeTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneChangeTrigger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DpaMonitoringSettings">
-    <option name="firstShow" value="false" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;bnamayan&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AlyBozz/PyroPlegics.git&quot;,
-    &quot;accountId&quot;: &quot;2fa10546-e825-43a1-8590-aa7b1406c863&quot;
-  }
-}</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2uYD0XrZNbC1p5FopbV20YRib8v" />
+  <component name="ProjectId" id="2ut7qM08afddvNSofEWCDjV3L3t" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "AlyLevel2-assets",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,16 +42,16 @@
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\SE2250b\PyroPlegics\PyroPlegics -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\SE2250b\PyroPlegics\PyroPlegics" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\mrben\Desktop\Projects\School\2250\PyroPlegics\PyroPlegics" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\SE2250b\PyroPlegics\PyroPlegics -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\SE2250b\PyroPlegics\PyroPlegics" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
@@ -105,26 +86,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5c2f88cc-f7d1-4a91-be85-68a10015fca6" name="Changes" comment="" />
-      <created>1742416410170</created>
+      <changelist id="88d48715-9441-48d7-84b2-0bc09b75bb7b" name="Changes" comment="" />
+      <created>1743056210712</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1742416410170</updated>
-      <workItem from="1742416412187" duration="8000" />
-      <workItem from="1742416447048" duration="48000" />
-      <workItem from="1742928590137" duration="475000" />
-      <workItem from="1742929865127" duration="4000" />
-      <workItem from="1742929909738" duration="64000" />
-      <workItem from="1742929999368" duration="22000" />
-      <workItem from="1742930252074" duration="592000" />
-      <workItem from="1742930879532" duration="1924000" />
-      <workItem from="1742933476991" duration="634000" />
-      <workItem from="1742934522397" duration="322000" />
-      <workItem from="1743009574357" duration="676000" />
-      <workItem from="1743010552554" duration="234000" />
-      <workItem from="1743010819969" duration="6000" />
-      <workItem from="1743011350753" duration="2398000" />
-      <workItem from="1743020694216" duration="989000" />
+      <updated>1743056210712</updated>
+      <workItem from="1743056210716" duration="312000" />
+      <workItem from="1743081025842" duration="1261000" />
+      <workItem from="1743087405989" duration="1612000" />
     </task>
     <servers />
   </component>
@@ -138,7 +107,4 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
-  <component name="VcsManagerConfiguration">
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
 </project>
