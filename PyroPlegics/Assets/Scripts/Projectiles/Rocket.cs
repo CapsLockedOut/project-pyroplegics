@@ -12,7 +12,7 @@ public class Rocket : ExplosiveProjectile
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collided with: " + collision.gameObject.name);
-        if (collision.gameObject.name != "Player" && collision.gameObject.name != "Dante_PyroPlegic")
+        if (collision.gameObject.name != "Player" && collision.gameObject.name != "Dante_PyroPlegic" && collision.gameObject.name != "Dante_PyroPlegic")
             Explode();
     }
 }

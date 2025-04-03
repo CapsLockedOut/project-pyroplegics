@@ -2515,7 +2515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea0d39ca0ef5c209a3ef1162a77b93d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: Level3
+  toScene: bossfight
 --- !u!65 &2134302510
 BoxCollider:
   m_ObjectHideFlags: 0

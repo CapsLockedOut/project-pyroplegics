@@ -29,7 +29,7 @@ public class NPCDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Dante_Paraplegic")
+        if (other.gameObject.name == "Dante_Paraplegic" || other.gameObject.name == "Player" || other.gameObject.name == "Dante_Paraplegic Variant")
         {
             playerInRange = true;
         }
