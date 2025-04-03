@@ -3,32 +3,30 @@ using UnityEngine;
 
 public class FallBelowMap : MonoBehaviour
 {
-    public CharacterController character;
-    
+    public Rigidbody playerRigidbody;
+    public float fallThreshold = -5.0f; // Define the threshold value
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        /*
-        if (character == null)
+        if (playerRigidbody == null)
         {
-            character = FindObjectsByType<CharacterController>();
+            playerRigidbody = FindFirstObjectByType<Rigidbody>();
         }
-        */
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (playerRigidbody.transform.position.y < fallThreshold)
+        {
+            TeleportPlayer();
+        }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void TeleportPlayer()
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            character.enabled = false;
-            character.transform.position = new Vector3(0, 10, 0);
-            character.enabled = true;
-        }
+        playerRigidbody.position = new Vector3(0, 10, 0);
+        playerRigidbody.linearVelocity = Vector3.zero; // Reset velocity to prevent continued falling
     }
 }
