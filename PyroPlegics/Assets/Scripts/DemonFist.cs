@@ -6,13 +6,12 @@ public class DemonFist : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Transform rb = GetComponent<Transform>();
-        Rigidbody otherRB = other.attachedRigidbody;
-        Debug.Log(rb + "\n" + otherRB);
+        Transform transform = GetComponent<Transform>();
+        Rigidbody rb = other.attachedRigidbody;
 
-        if (otherRB != null)
+        if (rb != null)
         {
-            otherRB.linearVelocity = rb.up * force;
+            rb.linearVelocity = transform.up * force;
         }
     }
 }
