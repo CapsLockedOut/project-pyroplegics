@@ -301,10 +301,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ca919bd8a6f4940aff51a6b9ebb9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 15
+  explosionForce: 20
   explosionRadius: 15
   upwardModifier: 1
-  additionalHorizontalForce: 10
+  additionalHorizontalForce: 5
 --- !u!1001 &4483190134865152260
 PrefabInstance:
   m_ObjectHideFlags: 0
