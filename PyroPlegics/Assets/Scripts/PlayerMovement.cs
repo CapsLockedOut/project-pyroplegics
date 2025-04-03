@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         // rb.freezeRotation = true;
+        
+        rb.angularDamping = 0;
+
+        // Debug.Log(rb.linearDamping);
+        // Debug.Log(rb.angularDamping);
     }
 
     void FixedUpdate()
