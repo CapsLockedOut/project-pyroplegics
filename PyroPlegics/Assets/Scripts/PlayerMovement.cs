@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
     public float friction;
+    public float gGame = 15f; //gravity
 
     public float jumpForce;
     public float jumpCooldown;
@@ -35,10 +36,14 @@ public class PlayerMovement : MonoBehaviour
 
         // Debug.Log(rb.linearDamping);
         // Debug.Log(rb.angularDamping);
+
+        rb.useGravity = false;
     }
 
     void FixedUpdate()
     {
+        rb.AddForce(new Vector3(0, -1.0f, 0)*rb.mass*gGame);  
+        
         // vector representing movement direction
         moveDirection = orientation.forward * verticalInput +
                         orientation.right * horizontalInput;
@@ -95,13 +100,13 @@ public class PlayerMovement : MonoBehaviour
     // is undetected
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Ground")
+        if (collision.gameObject.tag == "NoJump" || collision.gameObject.name == "Ground")
             onGround = true;
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "Ground")
+        if (collision.gameObject.tag == "NoJump" || collision.gameObject.name == "Ground")
             onGround = false;
     }
 }
