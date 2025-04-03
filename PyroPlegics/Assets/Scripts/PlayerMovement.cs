@@ -100,13 +100,13 @@ public class PlayerMovement : MonoBehaviour
     // is undetected
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Ground")
+        if (collision.gameObject.tag == "NoJump" || collision.gameObject.name == "Ground")
             onGround = true;
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "Ground")
+        if (collision.gameObject.tag == "NoJump" || collision.gameObject.name == "Ground")
             onGround = false;
     }
 }
