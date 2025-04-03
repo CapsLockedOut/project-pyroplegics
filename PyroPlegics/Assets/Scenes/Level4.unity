@@ -827,8 +827,9 @@ GameObject:
   - component: {fileID: 557495240}
   - component: {fileID: 557495239}
   - component: {fileID: 557495238}
+  - component: {fileID: 557495242}
   m_Layer: 0
-  m_Name: Platform (3)
+  m_Name: BlinkingPlatform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,6 +924,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &557495242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557495236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10aa919b9ba3a2045aa334741c9bb907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeVisible: 2
+  timeInvisible: 1
+  platformCollider: {fileID: 557495238}
+  platformRenderer: {fileID: 557495239}
 --- !u!1 &593587871
 GameObject:
   m_ObjectHideFlags: 0
