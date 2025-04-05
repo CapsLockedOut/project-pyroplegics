@@ -9,8 +9,9 @@ public class NextLevelTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.name == "Dante_Paraplegic" || other.gameObject.name == "Player")
+        if (other.CompareTag("Player"))
         {
+            Debug.Log("Dante is now on " + toScene);
             SceneManager.LoadScene(toScene);
         }
     }
