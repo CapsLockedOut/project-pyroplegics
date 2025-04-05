@@ -3,11 +3,11 @@ using UnityEngine;
 public class BouncePad : MonoBehaviour
 {
     public float bounceMultiplier = 1.2f;
+    Rigidbody rb;
 
     private void OnTriggerEnter(Collider other)
     {
-        Rigidbody rb = other.attachedRigidbody;
-
+        rb = other.attachedRigidbody;
         if (rb != null)
         {
             // Check if the object is moving downward before bouncing

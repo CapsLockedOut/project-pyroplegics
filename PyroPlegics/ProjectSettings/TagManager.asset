@@ -8,6 +8,9 @@ TagManager:
   - NPC
   - Grenade
   - NoJump
+  - NoCollision
+  - NoExplosion
+  - DimExplosion
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,6 @@ public class CameraController : MonoBehaviour
         // checks for dialogue - prevents camera movement
         if (PlayerMovement.readyToDialgoue)
         {
-            Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = true;
             return;
         }
@@ -40,7 +39,7 @@ public class CameraController : MonoBehaviour
         xRotation -= mouseY;
 
         // prevent player looking too far upwards/downwards
-        xRotation = Mathf.Clamp(xRotation, -90f, 100f);
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         // apply rotation
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
