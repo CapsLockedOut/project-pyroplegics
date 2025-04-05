@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class BlinkingPlatform : MonoBehaviour
+public class BlinkingPlatform : Platform
 {
     [Header("Blink Settings")]
     [Tooltip("Time in seconds the platform stays visible")]
@@ -14,7 +14,7 @@ public class BlinkingPlatform : MonoBehaviour
     [SerializeField] private Collider platformCollider;
     [SerializeField] private Renderer platformRenderer;
 
-    private void Start()
+    public override void Start()
     {
         // Auto-get components if not assigned
         if (platformCollider == null) platformCollider = GetComponent<Collider>();
