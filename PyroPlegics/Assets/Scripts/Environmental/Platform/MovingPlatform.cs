@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingPlatform : Platform
 {
     public Transform pointA;
     public Transform pointB;
@@ -8,8 +8,9 @@ public class MovingPlatform : MonoBehaviour
 
     private Vector3 target;
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         target = pointB.position; // Start by moving towards pointB
     }
 

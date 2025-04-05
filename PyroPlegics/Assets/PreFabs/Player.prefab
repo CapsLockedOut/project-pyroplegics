@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112cea6bd2f426f44b512c419ff5e4b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketLauncher: {fileID: 7312804824874046505, guid: 2ca529e73781d4549bbe68b761386b46, type: 3}
+  rocketLauncher: {fileID: 8019776021087794235}
   quadLauncher: {fileID: 3158037931385186577}
   grenadeLauncher: {fileID: 641877564830620197}
 --- !u!1001 &736262615751417874
@@ -502,6 +502,11 @@ Transform:
 --- !u!4 &4731425266716113941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5449035335795776519, guid: 2ca529e73781d4549bbe68b761386b46, type: 3}
+  m_PrefabInstance: {fileID: 736262615751417874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8019776021087794235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7312804824874046505, guid: 2ca529e73781d4549bbe68b761386b46, type: 3}
   m_PrefabInstance: {fileID: 736262615751417874}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2424831038623912923

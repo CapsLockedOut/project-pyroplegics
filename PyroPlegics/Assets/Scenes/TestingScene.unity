@@ -598,6 +598,67 @@ MonoBehaviour:
   rocketLauncher: {fileID: 1707132146}
   quadLauncher: {fileID: 146148696}
   grenadeLauncher: {fileID: 504101042}
+--- !u!1001 &380538377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.005609
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774395206074459613, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357718903501219956, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_Name
+      value: Island
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357718903501219956, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
+      propertyPath: m_TagString
+      value: NoJump
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa5fb241e92517d49b118cc42ee8923e, type: 3}
 --- !u!1 &490781236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,3 +2043,4 @@ SceneRoots:
   - {fileID: 1187339269}
   - {fileID: 1389322399}
   - {fileID: 1732357245}
+  - {fileID: 380538377}
