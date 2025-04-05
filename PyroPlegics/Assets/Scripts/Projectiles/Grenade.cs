@@ -16,7 +16,7 @@ public class Grenade : ExplosiveProjectile
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Mouse1))
-            Explode();
+            Explode(false);
     }
 
     void OnCollisionEnter(Collision collision)

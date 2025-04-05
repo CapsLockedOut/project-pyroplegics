@@ -8,8 +8,9 @@ public class ExplosiveProjectile : MonoBehaviour
     public float upwardModifier;           // Additional upward force for a stronger rocket jump
     public float additionalHorizontalForce; // Extra horizontal force to boost lateral movement
 
-    public void Explode()
+    public void Explode(bool dim)
     {
+        Debug.Log(dim);
         Vector3 explosionPosition = transform.position;
 
         // Get all colliders within the explosion radius
@@ -21,11 +22,18 @@ public class ExplosiveProjectile : MonoBehaviour
             Rigidbody rb = hit.GetComponent<Rigidbody>();
             if (rb != null && rb.gameObject.name != "Rocket(Clone)")
             {
+                // float temp = additionalHorizontalForce;
+
                 // Dampen previous velocity
                 rb.linearVelocity = new Vector3(rb.linearVelocity.x*0.75f, 0, rb.linearVelocity.z*0.75f);
 
                 // Apply explosion force to simulate a rocket jump effect
-                rb.AddExplosionForce(explosionForce, explosionPosition, explosionRadius, upwardModifier, ForceMode.Impulse);
+                // if (dim) {
+                //     rb.AddExplosionForce(explosionForce*0.5f, explosionPosition, explosionRadius, upwardModifier, ForceMode.Impulse);
+                //     additionalHorizontalForce = (explosionForce + additionalHorizontalForce)/2;
+                // }
+                // else
+                    rb.AddExplosionForce(explosionForce, explosionPosition, explosionRadius, upwardModifier, ForceMode.Impulse);
                 
                 // Calculate horizontal direction
                 Vector3 horizontalDirection = rb.position - explosionPosition;
@@ -37,6 +45,7 @@ public class ExplosiveProjectile : MonoBehaviour
                     // Apply additional horizontal force to boost lateral movement
                     rb.AddForce(horizontalDirection * additionalHorizontalForce, ForceMode.Impulse);
                 }
+                // additionalHorizontalForce = temp;
             }
         }
 
