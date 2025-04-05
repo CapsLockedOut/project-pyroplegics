@@ -20,24 +20,32 @@ public class WeaponController : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1) && unlocked[0])
-            SwitchWeapon(rocketLauncher);
+            SwitchWeapon(0);
 
         else if(Input.GetKeyDown(KeyCode.Alpha2) && unlocked[1])
-            SwitchWeapon(quadLauncher);
+            SwitchWeapon(1);
 
         else if(Input.GetKeyDown(KeyCode.Alpha3) && unlocked[2])
-            SwitchWeapon(grenadeLauncher);
+            SwitchWeapon(2);
     }
 
-    void SwitchWeapon(GameObject weapon)
+    void SwitchWeapon(int weapon)
     {
+        if (!unlocked[weapon])
+            return;
+
         // deactivate all weapons
         rocketLauncher.SetActive(false);
         quadLauncher.SetActive(false);
         grenadeLauncher.SetActive(false);
 
         // activate desired weapon
-        weapon.SetActive(true);
+        if (weapon == 0)
+            rocketLauncher.SetActive(true);
+        if (weapon == 1)
+            quadLauncher.SetActive(true);
+        if (weapon == 2)
+            grenadeLauncher.SetActive(true);
     }
 
     public void UnlockWeapon(int index)
