@@ -6630,23 +6630,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5910174406163723706, guid: 059c948fb8492b84496f9803391904c8, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6461986110116900902, guid: 059c948fb8492b84496f9803391904c8, type: 3}
       propertyPath: m_Name
-      value: Dante_Paraplegic
+      value: Dante_Paraplegic Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 5529803518166140262, guid: 059c948fb8492b84496f9803391904c8, type: 3}
-    - {fileID: 5388270668884319935, guid: 059c948fb8492b84496f9803391904c8, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2284119923315991986, guid: 059c948fb8492b84496f9803391904c8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2116055135}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059c948fb8492b84496f9803391904c8, type: 3}
 --- !u!1 &1545671234
 GameObject:
@@ -9042,26 +9033,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d787428d69841564d8e59f6858884468, type: 3}
---- !u!1 &2116055133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2284119923315991986, guid: 059c948fb8492b84496f9803391904c8, type: 3}
-  m_PrefabInstance: {fileID: 1528874293}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2116055135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116055133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 112cea6bd2f426f44b512c419ff5e4b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rocketLauncher: {fileID: 0}
-  quadLauncher: {fileID: 0}
-  grenadeLauncher: {fileID: 0}
 --- !u!4 &2130153422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8144080604075172413, guid: edd50505dc2f23f418de7d565d951d00, type: 3}
