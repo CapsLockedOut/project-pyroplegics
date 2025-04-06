@@ -6,11 +6,19 @@ public class NPCDetection : MonoBehaviour
 {
     public GameObject dialogueTemplate;
     public GameObject canva;
+    public GameObject canvaInteract;
     bool playerInRange = false;
 
     // Update is called once per frame
     void Update()
     {
+        if (playerInRange)
+        {
+            canvaInteract.SetActive(true);
+        }
+        else {canvaInteract.SetActive(false);}
+        
+        
         // Check if the player is in range and presses the E key to start dialogue
         if (playerInRange && Input.GetKeyDown(KeyCode.E) && !PlayerMovement.readyToDialgoue)
         {
