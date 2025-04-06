@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -69,6 +70,19 @@ public class PlayerMovement : MonoBehaviour
         // read movement input
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
+
+        // Check for level restart
+        if (Input.GetKeyDown(KeyCode.R))
+{
+    // Reset the coin counter
+    if (PlayerScore.Instance != null)
+    {
+        PlayerScore.Instance.Score = 0;
+    }
+    
+    // Reload the current scene
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+}
 
         // jump
         if(Input.GetKey(jumpKey) && readyToJump && onGround)
