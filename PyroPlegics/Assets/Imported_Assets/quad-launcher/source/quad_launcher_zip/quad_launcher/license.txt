@@ -1,0 +1,11 @@
+Model Information:
+* title:	Quad Launcher
+* source:	https://sketchfab.com/3d-models/quad-launcher-7b612b45a1a94233a366eb184369aa7e
+* author:	Blawgalio (https://sketchfab.com/Blawgalio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Quad Launcher" (https://sketchfab.com/3d-models/quad-launcher-7b612b45a1a94233a366eb184369aa7e) by Blawgalio (https://sketchfab.com/Blawgalio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
