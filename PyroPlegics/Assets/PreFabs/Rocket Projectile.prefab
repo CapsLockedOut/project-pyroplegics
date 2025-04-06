@@ -303,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 18
   explosionRadius: 15
-  upwardModifier: 0
+  upwardModifier: 1
   additionalHorizontalForce: 0
 --- !u!1001 &4483190134865152260
 PrefabInstance:
