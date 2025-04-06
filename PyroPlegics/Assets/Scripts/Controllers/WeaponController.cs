@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WeaponController : MonoBehaviour
 {
@@ -7,13 +8,72 @@ public class WeaponController : MonoBehaviour
     public GameObject grenadeLauncher;
 
     private bool[] unlocked = new bool[3];
+    private string currentScene;
 
     void Start()
     {
-        unlocked[0] = true;
-        // temp on true
-        unlocked[1] = true;
-        unlocked[2] = true;
+        UpdateWeaponAvailability();
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        UpdateWeaponAvailability();
+    }
+
+    private void UpdateWeaponAvailability()
+    {
+        // Get current scene name
+        currentScene = SceneManager.GetActiveScene().name;
+
+        // Reset all weapons to locked
+        unlocked[0] = false;
+        unlocked[1] = false;
+        unlocked[2] = false;
+        
+        // Set weapon availability based on level
+        if (currentScene == "Level1" || currentScene == "Level2")
+        {
+            // Only rocket launcher
+            unlocked[0] = true;
+        }
+        else if (currentScene == "Level3")
+        {
+            // Rocket launcher and quad launcher
+            unlocked[0] = true;
+            unlocked[1] = true;
+        }
+        else if (currentScene == "Level4" || currentScene == "Level5")
+        {
+            // All weapons
+            unlocked[0] = true;
+            unlocked[1] = true;
+            unlocked[2] = true;
+        }
+        else
+        {
+            // Default for any other scenes
+            unlocked[0] = true;
+        }
+        
+        // Switch to an available weapon
+        for (int i = 0; i < unlocked.Length; i++)
+        {
+            if (unlocked[i])
+            {
+                SwitchWeapon(i);
+                break;
+            }
+        }
     }
 
     // check for number key press
@@ -50,6 +110,7 @@ public class WeaponController : MonoBehaviour
 
     public void UnlockWeapon(int index)
     {
-        unlocked[index] = true;
+        if (index >= 0 && index < unlocked.Length)
+            unlocked[index] = true;
     }
 }

@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         // rb.freezeRotation = true;
-        
+
         rb.angularDamping = 0;
 
         // Debug.Log(rb.linearDamping);
@@ -43,17 +43,17 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.AddForce(new Vector3(0, -1.0f, 0)*rb.mass*gGame);  
-        
+        rb.AddForce(new Vector3(0, -1.0f, 0) * rb.mass * gGame);
+
         // vector representing movement direction
         moveDirection = orientation.forward * verticalInput +
                         orientation.right * horizontalInput;
 
         // midair movement
-        if(!onGround)
+        if (!onGround)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f,
                         ForceMode.Force);
-        
+
         // checks for dialogue - prevents player from jumping
         if (!readyToDialgoue)
         {
@@ -73,19 +73,25 @@ public class PlayerMovement : MonoBehaviour
 
         // Check for level restart
         if (Input.GetKeyDown(KeyCode.R))
-{
-    // Reset the coin counter
-    if (PlayerScore.Instance != null)
-    {
-        PlayerScore.Instance.Score = 0;
-    }
-    
-    // Reload the current scene
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-}
+        {
+            // Reset the coin counter
+            if (PlayerScore.Instance != null)
+            {
+                PlayerScore.Instance.Score = 0;
+            }
+
+            // Reset ammo count
+            if (AmmoManager.Instance != null)
+            {
+                AmmoManager.Instance.ResetAmmo();
+            }
+
+            // Reload the current scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
 
         // jump
-        if(Input.GetKey(jumpKey) && readyToJump && onGround)
+        if (Input.GetKey(jumpKey) && readyToJump && onGround)
         {
             readyToJump = false;
 
@@ -99,13 +105,14 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // handle friction; to be done by individual platforms in the future?
-        if(onGround)
+        if (onGround)
             rb.linearDamping = friction;
         else
             rb.linearDamping = 0;
     }
 
-    private void ResetJump() {
+    private void ResetJump()
+    {
         readyToJump = true;
     }
 

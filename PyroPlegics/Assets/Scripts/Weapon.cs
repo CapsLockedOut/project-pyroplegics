@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Import the new Input System
+using UnityEngine.InputSystem;
 
 // Attach this to your weapon (child of the camera)
 public class Weapon : MonoBehaviour
@@ -14,6 +14,9 @@ public class Weapon : MonoBehaviour
 
     [Header("Fire Point")]
     public Transform firePoint;              // The transform from which the bullet will be fired
+    
+    [Header("Weapon Type")]
+    public int weaponType;                   // 0 = Rocket Launcher, 1 = Quad Launcher, 2 = Grenade Launcher
 
     void Update()
     {
@@ -24,11 +27,25 @@ public class Weapon : MonoBehaviour
         }
     }
 
+
     // Method to handle shooting
     void Shoot()
     {
+
+
         if(!canFire)
             return;
+            
+        // Check if we have ammo for rocket launcher in Level2
+        if (weaponType == 0 && AmmoManager.Instance != null)
+        {
+            if (!AmmoManager.Instance.UseRocketAmmo())
+            {
+                // Play empty click sound or feedback
+                Debug.Log("Out of ammo!");
+                return;
+            }
+        }
 
         canFire = false;
 
