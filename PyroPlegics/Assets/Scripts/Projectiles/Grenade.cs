@@ -21,6 +21,8 @@ public class Grenade : ExplosiveProjectile
 
     void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.tag == "Player")
+            return;
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
 }
