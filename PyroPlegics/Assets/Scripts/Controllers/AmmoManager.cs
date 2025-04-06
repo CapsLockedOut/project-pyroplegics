@@ -7,15 +7,11 @@ public class AmmoManager : MonoBehaviour
     public static AmmoManager Instance;
     
     // Ammo settings for different levels
-    [Header("Ammo Settings")]
-    public int level2RocketLauncherAmmo = 10;
-    public int level2QuadLauncherAmmo = 0;
-    public int level2GrenadeLauncherAmmo = 0;
+    [Header("Level 2 Ammo Settings")]
+    public int rocketLauncherAmmo = 10;
     
     // Current ammo counts
-    private int rocketLauncherAmmo;
-    private int quadLauncherAmmo;
-    private int grenadeLauncherAmmo;
+    private int currentRocketAmmo;
     
     // UI Text to display ammo count
     [Header("UI References")]
@@ -45,29 +41,30 @@ public class AmmoManager : MonoBehaviour
         // Set ammo based on level
         if (scene.name == "Level2")
         {
-            rocketLauncherAmmo = level2RocketLauncherAmmo;
-            quadLauncherAmmo = level2QuadLauncherAmmo;
-            grenadeLauncherAmmo = level2GrenadeLauncherAmmo;
+            currentRocketAmmo = rocketLauncherAmmo;
         }
         else
         {
-            // Default to infinite ammo for other levels
-            rocketLauncherAmmo = -1; // -1 means infinite
-            quadLauncherAmmo = -1;
-            grenadeLauncherAmmo = -1;
+            // Infinite ammo for other levels
+            currentRocketAmmo = -1; // -1 means infinite
         }
         
-        UpdateAmmoDisplay();
+        // Find ammo text in new scene
         FindAmmoText();
+        UpdateAmmoDisplay();
     }
     
     private void FindAmmoText()
     {
         if (ammoText == null)
         {
-            ammoText = GameObject.FindGameObjectWithTag("AmmoText")?.GetComponent<TextMeshProUGUI>();
+            // Try to find by tag
+            GameObject textObj = GameObject.FindGameObjectWithTag("AmmoText");
+            if (textObj != null)
+            {
+                ammoText = textObj.GetComponent<TextMeshProUGUI>();
+            }
         }
-        UpdateAmmoDisplay();
     }
     
     public void UpdateAmmoDisplay()
@@ -78,8 +75,8 @@ public class AmmoManager : MonoBehaviour
             
             if (currentScene == "Level2")
             {
-                // Only show rocket launcher ammo for Level2
-                ammoText.text = "Rockets: " + (rocketLauncherAmmo == -1 ? "∞" : rocketLauncherAmmo.ToString());
+                // Display rocket launcher ammo for Level2
+                ammoText.text = "Rockets: " + (currentRocketAmmo == -1 ? "∞" : currentRocketAmmo.ToString());
                 ammoText.gameObject.SetActive(true);
             }
             else
@@ -90,7 +87,7 @@ public class AmmoManager : MonoBehaviour
         }
     }
     
-    public bool UseAmmo(int weaponType)
+    public bool UseRocketAmmo()
     {
         string currentScene = SceneManager.GetActiveScene().name;
         
@@ -98,41 +95,14 @@ public class AmmoManager : MonoBehaviour
         if (currentScene != "Level2")
             return true;
             
-        switch (weaponType)
+        if (currentRocketAmmo > 0 || currentRocketAmmo == -1)
         {
-            case 0: // Rocket Launcher
-                if (rocketLauncherAmmo > 0 || rocketLauncherAmmo == -1)
-                {
-                    if (rocketLauncherAmmo > 0) // Don't decrement if infinite (-1)
-                        rocketLauncherAmmo--;
-                    UpdateAmmoDisplay();
-                    return true;
-                }
-                return false;
-                
-            case 1: // Quad Launcher
-                if (quadLauncherAmmo > 0 || quadLauncherAmmo == -1)
-                {
-                    if (quadLauncherAmmo > 0)
-                        quadLauncherAmmo--;
-                    UpdateAmmoDisplay();
-                    return true;
-                }
-                return false;
-                
-            case 2: // Grenade Launcher
-                if (grenadeLauncherAmmo > 0 || grenadeLauncherAmmo == -1)
-                {
-                    if (grenadeLauncherAmmo > 0)
-                        grenadeLauncherAmmo--;
-                    UpdateAmmoDisplay();
-                    return true;
-                }
-                return false;
-                
-            default:
-                return true;
+            if (currentRocketAmmo > 0) // Don't decrement if infinite (-1)
+                currentRocketAmmo--;
+            UpdateAmmoDisplay();
+            return true;
         }
+        return false;
     }
     
     public void ResetAmmo()
@@ -141,9 +111,7 @@ public class AmmoManager : MonoBehaviour
         
         if (currentScene == "Level2")
         {
-            rocketLauncherAmmo = level2RocketLauncherAmmo;
-            quadLauncherAmmo = level2QuadLauncherAmmo;
-            grenadeLauncherAmmo = level2GrenadeLauncherAmmo;
+            currentRocketAmmo = rocketLauncherAmmo;
             UpdateAmmoDisplay();
         }
     }

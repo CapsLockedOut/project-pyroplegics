@@ -11,6 +11,7 @@ TagManager:
   - NoCollision
   - NoExplosion
   - DimExplosion
+  - AmmoText
   layers:
   - Default
   - TransparentFX
