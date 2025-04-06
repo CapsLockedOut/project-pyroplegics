@@ -3743,45 +3743,39 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Salutations Dante! Welcome to the Circle of Greed.
 
-    
 
-    In Greed,
-    coins are scattered across the map. Just know that they will NOT help you finish
-    the level, so greed and collect them if you wish to explore the level! As usual,
+    In Greed, coins
+    are scattered across the map. Just know that they will NOT help you finish the
+    level, so greed and collect them if you wish to explore the level! As usual,
     make your way to the top using the platforms, and touch the purple portal to
     reach the next level, while dealing with some gluttonous islands. Be warned that
     your greed has left you with limited shots to reach the next level.
 
-    
 
-    
 
     Movement
     Controls - Click ''Spacebar'' to jump, then use the ''W, A, S, D'' keys to move
     forward, left, backward, or right in mid-air respectively.
 
-    
 
-    Weapon
-    Controls - Click ''Left Mouse Button'' to shoot!
+    Weapon Controls
+    - Click ''Left Mouse Button'' to shoot!
 
-    
 
-    
 
-    Don''t forget,
-    if your greed leads to the impossible, simply press the ''R'' key to restart
-    the level!
+    Don''t forget, if your greed leads
+    to the impossible, simply press the ''R'' key to restart the level!
 
-    Good luck!
+    Good
+    luck!
 
     SHOW ME THE MONEY!
 
-    (*Click ''Left Mouse
-    Button'' to close*)
+    (*Click ''Left Mouse Button'' to close*)
 
-    TIP: Aim down and jump before shooting to project yourself
-    higher and gain better mid-air movement!'
+    TIP:
+    Aim down and jump before shooting to project yourself higher and gain better
+    mid-air movement!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3808,8 +3802,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

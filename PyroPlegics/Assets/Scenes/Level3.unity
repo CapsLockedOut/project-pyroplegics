@@ -4113,55 +4113,46 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Dante! Welcome to Circle of Anger!
 
-    
 
-    Recently some demons have
-    left a bounce pad in the middle, probably to take the edge off. It''s hard being
-    so angry all the time after all. You should also beware of the demon hands around
+    Recently some demons have left
+    a bounce pad in the middle, probably to take the edge off. It''s hard being so
+    angry all the time after all. You should also beware of the demon hands around
     here, they''ll punch you if you get right in front of them.
 
-    
 
-    In a
-    fit of rage, it seems like the islands have also broken up and became individual
-    platforms, but let''s try not to worry about them too much here.
+    In a fit of
+    rage, it seems like the islands have also broken up and became individual platforms,
+    but let''s try not to worry about them too much here.
 
-    
 
-    Oh
-    and last thing, after this circle is the Circle of Fraud. Be careful when you
-    get there.
+    Oh and last thing,
+    after this circle is the Circle of Fraud. Be careful when you get there.
 
-    
 
-    
 
-    Movement Controls - Click ''Spacebar'' to jump,
-    then use the ''W, A, S, D'' keys to move forward, left, backward, or right in
-    mid-air respectively.
+    Movement
+    Controls - Click ''Spacebar'' to jump, then use the ''W, A, S, D'' keys to move
+    forward, left, backward, or right in mid-air respectively.
 
-    
 
-    Weapon Controls - Click ''Left Mouse Button''
-    to shoot!
+    Weapon Controls
+    - Click ''Left Mouse Button'' to shoot!
 
-    
 
-    
 
-    Don''t forget, if the impossible triggers your
-    anger and overwhelms you, simply press the ''R'' key to restart the level!
+    Don''t forget, if the impossible
+    triggers your anger and overwhelms you, simply press the ''R'' key to restart
+    the level!
 
-    Good
-    luck!
+    Good luck!
 
-    NOW... RELEASE YOUR ANGER. ONLY YOUR HATRED CAN DESTROY ME.
+    NOW... RELEASE YOUR ANGER. ONLY YOUR HATRED CAN
+    DESTROY ME.
 
-    (*Click
-    ''Left Mouse Button'' to close*)
+    (*Click ''Left Mouse Button'' to close*)
 
-    TIP: Aim down and jump before shooting
-    to project yourself higher and gain better mid-air movement!'
+    TIP: Aim down
+    and jump before shooting to project yourself higher and gain better mid-air movement!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
