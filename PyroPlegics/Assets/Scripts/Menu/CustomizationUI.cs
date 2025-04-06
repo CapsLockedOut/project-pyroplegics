@@ -183,7 +183,8 @@ public class CustomizationUI : MonoBehaviour
             {
                 hairColorButtons[i].onClick.AddListener(() => {
                     if (playerCustom != null)
-                        playerCustom.ChangeHairColor(colorPresets[index]);
+                        playerCustom.hairRenderer.material.color = Color.blue;
+                        //playerCustom.ChangeHairColor(colorPresets[index]);
                 });
             }
         }
