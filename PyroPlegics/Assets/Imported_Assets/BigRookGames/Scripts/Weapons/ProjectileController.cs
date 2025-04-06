@@ -44,7 +44,7 @@ namespace BigRookGames.Weapons
         {
             // --- return if not enabled because OnCollision is still called if compoenent is disabled ---
             if (!enabled) return;
-            if (collision.gameObject.tag == "NoCollision" || collision.gameObject.name == "Dante_PyroPlegic" || collision.gameObject.name == "Dante_PyroPlegic Variant")
+            if (collision.gameObject.tag == "Player" || collision.gameObject.name == "Dante_PyroPlegic" || collision.gameObject.name == "Dante_PyroPlegic Variant")
                 return;
 
             if(collision.gameObject.tag == "NoExplosion") {
