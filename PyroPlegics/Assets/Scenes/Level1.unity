@@ -2728,7 +2728,7 @@ GameObject:
   - component: {fileID: 1509475639}
   - component: {fileID: 1509475638}
   m_Layer: 5
-  m_Name: DialogueCanvas
+  m_Name: NPCDialogueCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2842,7 +2842,7 @@ GameObject:
   - component: {fileID: 1537111511}
   - component: {fileID: 1537111510}
   m_Layer: 5
-  m_Name: InteractCanvas
+  m_Name: NPCInteractCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
