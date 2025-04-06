@@ -21,7 +21,7 @@ public class Rocket : ExplosiveProjectile
             return;
         }
 
-        if (collision.gameObject.tag != "NoCollision" && collision.gameObject.name != "Dante_PyroPlegic" && collision.gameObject.name != "Dante_PyroPlegic Variant") {
+        if (collision.gameObject.tag != "Player" && collision.gameObject.name != "Dante_PyroPlegic" && collision.gameObject.name != "Dante_PyroPlegic Variant") {
             Debug.Log("Collided with: " + collision.gameObject.name);
             alreadyDeonated = true;
 
