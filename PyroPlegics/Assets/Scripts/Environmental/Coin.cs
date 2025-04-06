@@ -6,8 +6,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Handle coin pickup logic here
-            // For example, increase the player's score
+            // increase the player's score
             PlayerScore.Instance.AddScore(1);
 
             // Destroy the coin
