@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4586808788952107559}
   - component: {fileID: 4563968057521512338}
   - component: {fileID: 5972668547587419667}
+  - component: {fileID: 2709029164278947592}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Grenade
@@ -153,3 +154,23 @@ MonoBehaviour:
   explosionRadius: 8
   upwardModifier: 1
   additionalHorizontalForce: 5
+--- !u!114 &2709029164278947592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697780043317899391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84d8719e40fbf1469ae5d0cf8f9903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  rocketExplosion: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
+  projectileMesh: {fileID: 0}
+  inFlightAudioSource: {fileID: 0}
+  disableOnHit: {fileID: 0}
