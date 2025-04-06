@@ -3720,7 +3720,6 @@ MonoBehaviour:
   m_text: 'Salutations Dante! Welcome to the Circle of Greed.
 
 
-
     In Greed, coins
     are scattered across the map. Just know that they will NOT help you finish the
     level, so greed and collect them if you wish to explore the level! As usual,
@@ -3730,12 +3729,9 @@ MonoBehaviour:
 
 
 
-
-
     Movement
     Controls - Click ''Spacebar'' to jump, then use the ''W, A, S, D'' keys to move
     forward, left, backward, or right in mid-air respectively.
-
 
 
     Weapon Controls
@@ -3743,10 +3739,8 @@ MonoBehaviour:
 
 
 
-
-
-    Don''t forget, if your greed
-    leads to the impossible, simply press the ''R'' key to restart the level!
+    Don''t forget, if your greed leads
+    to the impossible, simply press the ''R'' key to restart the level!
 
     Good
     luck!
@@ -3784,8 +3778,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

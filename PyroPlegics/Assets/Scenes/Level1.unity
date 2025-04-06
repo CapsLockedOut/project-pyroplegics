@@ -1050,58 +1050,49 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Hi Dante! Welcome to the Circle of Gluttony.
 
-    
 
-    After attempting
-    a prison escape at Western Penitentiary using a rocket launcher from an outside
+    After attempting a
+    prison escape at Western Penitentiary using a rocket launcher from an outside
     contact, you caused a sinkhole to hell. During the fall, your legs fall off and
     fall all the way down to the Circle of Treachery, otherwise known as the bottom
     of Hell.
 
-    
 
-    Now, armed with only your rocket launcher, you begin your
-    journey on retrieving your long lost legs by navigating through the circles of
-    Hell. Reach Treachery, defeat the devil and retrieve those legs of yours!
+    Now, armed with only your rocket launcher, you begin your journey
+    on retrieving your long lost legs by navigating through the circles of Hell.
+    Reach Treachery, defeat the devil and retrieve those legs of yours!
 
-    
 
     Starting
     in Gluttony, make your way to the top using the islands, and touch the purple
     portal to reach the next level. Be careful, these gluttonous islands can only
     take up so many rockets before permanently disappearing!
 
-    
 
-    
 
-    Movement
-    Controls - Click ''Spacebar'' to jump, then use the ''W, A, S, D'' keys to move
-    forward, left, backward, or right in mid-air respectively.
+    Movement Controls
+    - Click ''Spacebar'' to jump, then use the ''W, A, S, D'' keys to move forward,
+    left, backward, or right in mid-air respectively.
 
-    
 
-    Weapon
-    Controls - Click ''Left Mouse Button'' to shoot!
+    Weapon Controls - Click
+    ''Left Mouse Button'' to shoot!
 
-    
 
-    
 
-    If things
-    get impossible, simply press the ''R'' key to restart the level!
+    If things get impossible, simply press
+    the ''R'' key to restart the level!
 
-    Good luck
-    and enjoy the journey!
+    Good luck and enjoy the journey!
 
-    YOU WILL BE KING! STICK WITH ME, AND YOU''LL NEVER
-    GO HUNGRY AGAIN.
+    YOU
+    WILL BE KING! STICK WITH ME, AND YOU''LL NEVER GO HUNGRY AGAIN.
 
-    (*Click ''Left Mouse Button'' to close*)
+    (*Click
+    ''Left Mouse Button'' to close*)
 
-    TIP: Aim
-    down and jump before shooting to project yourself higher and gain better mid-air
-    movement!'
+    TIP: Aim down and jump before shooting
+    to project yourself higher and gain better mid-air movement!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
