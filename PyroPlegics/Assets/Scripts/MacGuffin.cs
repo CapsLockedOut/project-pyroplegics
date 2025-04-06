@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class MacGuffin : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MacGuffin : MonoBehaviour
 
     // Rotation settings
     public Vector3 rotationAxis = Vector3.up;
+    public TextMeshProUGUI hitsText;
     public float rotationSpeed = 90f; // degrees per second
 
     private void Update()
@@ -44,6 +46,14 @@ public class MacGuffin : MonoBehaviour
                 Destroy(transform.parent.gameObject);
             else
                 Destroy(gameObject);
+        }
+        void UpdateHUD()
+        {
+            if (hitsText != null)
+            {
+            int remaining = Mathf.Max(0, requiredHits - hitCount);
+            hitsText.text = remaining > 0 ? $"{remaining} Hit(s) Remaining" : "Object Destroyed!";
+            }
         }
     }
 }
