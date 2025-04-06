@@ -1695,7 +1695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10aa919b9ba3a2045aa334741c9bb907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeVisible: 2
+  timeVisible: 6
   timeInvisible: 1
   platformCollider: {fileID: 557495238}
   platformRenderer: {fileID: 557495239}
