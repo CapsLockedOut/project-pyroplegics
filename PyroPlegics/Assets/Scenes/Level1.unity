@@ -1206,19 +1206,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hi Dante! Welcome to Level 1.
+  m_text: 'Hi Dante! Welcome to the Circle of Gluttony.
 
 
-    This is where you begin your journey
-    on retrieving your long lost legs. Make your way to the top using the platforms,
-    and touch the purple portal to reach the next level.
+    After attempting a
+    prison escape at Western Penitentiary using a rocket launcher from an outside
+    contact, you caused a sinkhole to hell. During the fall, your legs fall off and
+    fall all the way to the bottom of Hell, Treachery.
 
 
-    Weapon Controls -
-    Click ''Left Mouse Button'' to shoot!
+    Now, armed with only
+    your rocket launcher, you begin your journey on retrieving your long lost legs
+    by navigating through the circles of Hell. Reach Treachery, defeat the devil
+    and retrieve those legs of yours!
 
 
-    Good luck and enjoy the journey.'
+    Starting in Gluttony, make your way to
+    the top using the platforms, and touch the purple portal to reach the next level.
+    Be careful, these platforms can only take up so many rockets before permanently
+    disappearing!
+
+
+
+    Weapon Controls - Click ''Left Mouse Button'' to shoot!
+
+
+
+    Good
+    luck and enjoy the journey.
+
+    (*Click ''Left Mouse Button'' to close*)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1245,8 +1262,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53
-  m_fontSizeBase: 53
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2387,6 +2404,10 @@ PrefabInstance:
     - target: {fileID: 6461986110116900902, guid: 059c948fb8492b84496f9803391904c8, type: 3}
       propertyPath: m_Name
       value: Dante_Paraplegic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6461986110116900902, guid: 059c948fb8492b84496f9803391904c8, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
