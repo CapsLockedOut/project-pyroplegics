@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 4586808788952107559}
   - component: {fileID: 4563968057521512338}
   - component: {fileID: -3568890545119715257}
+  - component: {fileID: -3123026001209222}
   m_Layer: 0
   m_Name: Fireball
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +150,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ca919bd8a6f4940aff51a6b9ebb9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 15
+  explosionForce: 50
   explosionRadius: 15
   upwardModifier: 1
   additionalHorizontalForce: 10
+--- !u!114 &-3123026001209222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697780043317899391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84d8719e40fbf1469ae5d0cf8f9903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 25
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  rocketExplosion: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
+  projectileMesh: {fileID: 7375337548765109680, guid: 5269dd52fdc50ea429c6b6a65cc1161e, type: 3}
+  inFlightAudioSource: {fileID: 136168842684345051, guid: 5269dd52fdc50ea429c6b6a65cc1161e, type: 3}
+  disableOnHit: {fileID: 4361980691020798282, guid: 5269dd52fdc50ea429c6b6a65cc1161e, type: 3}
