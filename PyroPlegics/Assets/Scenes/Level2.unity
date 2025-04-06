@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6772de0938357f4bbf6e7a183d08140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketLauncherAmmo: 11
+  rocketLauncherAmmo: 20
   ammoText: {fileID: 904855464}
 --- !u!4 &857386710
 Transform:
