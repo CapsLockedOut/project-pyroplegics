@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BreakablePlatform : Platform
 {
-    public int platformHealth = 5;
+    public int platformHealth = 2;
 
     private void OnCollisionEnter(Collision other)
     {
