@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Import the new Input System
+using UnityEngine.InputSystem;
 
 // Attach this to your weapon (child of the camera)
 public class Weapon : MonoBehaviour
@@ -7,16 +7,23 @@ public class Weapon : MonoBehaviour
     private bool canFire = true;
     private GameObject bulletInstance;
 
+
     [Header("Bullet Settings")]
     public float bulletSpeed;                // Speed at which the bullet will travel
     public float fireInterval;
     public GameObject bulletPrefab;          // The bullet prefab to instantiate
 
+
     [Header("Fire Point")]
     public Transform firePoint;              // The transform from which the bullet will be fired
+    
+
+    [Header("Weapon Type")]
+    public int weaponType;                   // 0 = Rocket Launcher, 1 = Quad Launcher, 2 = Grenade Launcher
 
     void Update()
     {
+
         // Check for left mouse button press using the new Input System
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame && !PlayerMovement.readyToDialgoue)
         {
@@ -24,11 +31,24 @@ public class Weapon : MonoBehaviour
         }
     }
 
+
     // Method to handle shooting
     void Shoot()
     {
+
+        
         if(!canFire)
             return;
+            
+        // Check if we have ammo (or if ammo system exists first)
+        if (AmmoManager.Instance != null)
+        {
+            if (!AmmoManager.Instance.UseAmmo(weaponType))
+            {
+                Debug.Log("Out of ammo!");
+                return;
+            }
+        }
 
         canFire = false;
 
