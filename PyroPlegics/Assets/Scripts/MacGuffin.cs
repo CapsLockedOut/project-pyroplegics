@@ -1,11 +1,12 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MacGuffin : MonoBehaviour
 {
     // Number of times the object has been hit
     private int hitCount = 0;
-    
+
     // Number of hits required to destroy the parent object
     public int requiredHits = 3;
 
@@ -14,8 +15,9 @@ public class MacGuffin : MonoBehaviour
 
     // Rotation settings
     public Vector3 rotationAxis = Vector3.up;
-    public TextMeshProUGUI hitsText;
     public float rotationSpeed = 90f; // degrees per second
+
+    public TextMeshProUGUI hitsText;
 
     private void Update()
     {
@@ -27,7 +29,7 @@ public class MacGuffin : MonoBehaviour
     {
         // 1) Count this as a hit
         hitCount++;
-        
+
         // 2) Print "hit"
         Debug.Log("hit");
         UpdateHUD();
@@ -43,18 +45,23 @@ public class MacGuffin : MonoBehaviour
         // 4) If we've reached the threshold, destroy
         if (hitCount >= requiredHits)
         {
+            Debug.Log("MacGuffin destroyed! Loading next scene...");
+
             if (transform.parent != null)
                 Destroy(transform.parent.gameObject);
             else
                 Destroy(gameObject);
+
+            SceneManager.LoadScene("WinMenu");
         }
-        void UpdateHUD()
+    }
+
+    private void UpdateHUD()
+    {
+        if (hitsText != null)
         {
-            if (hitsText != null)
-            {
             int remaining = Mathf.Max(0, requiredHits - hitCount);
             hitsText.text = remaining > 0 ? $"{remaining} Hit(s) Remaining" : "Object Destroyed!";
-            }
         }
     }
 }
