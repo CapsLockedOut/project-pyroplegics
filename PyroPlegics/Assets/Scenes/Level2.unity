@@ -5073,7 +5073,7 @@ GameObject:
   - component: {fileID: 2072960946}
   - component: {fileID: 2072960945}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: GroundFloor
   m_TagString: NoJump
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
