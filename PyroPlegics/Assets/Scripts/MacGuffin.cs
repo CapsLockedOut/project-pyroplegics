@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MacGuffin : MonoBehaviour
 {
@@ -21,6 +22,19 @@ public class MacGuffin : MonoBehaviour
     {
         // Rotate continuously while alive
         transform.Rotate(rotationAxis, rotationSpeed * Time.deltaTime, Space.Self);
+    }
+    if (hitCount >= requiredHits)
+{
+    Debug.Log("MacGuffin destroyed! Loading next scene...");
+
+    // Destroy the object
+    if (transform.parent != null)
+        Destroy(transform.parent.gameObject);
+    else
+        Destroy(gameObject);
+
+    // Load another scene (replace "NextSceneName" with your actual scene name)
+    SceneManager.LoadScene("WinMenu");
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -47,7 +61,7 @@ public class MacGuffin : MonoBehaviour
             else
                 Destroy(gameObject);
         }
-        void UpdateHUD()
+    void UpdateHUD()
         {
             if (hitsText != null)
             {
