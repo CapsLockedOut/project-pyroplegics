@@ -5,6 +5,7 @@ public class WeaponDetection : MonoBehaviour
     public GameObject dialogueTemplate;
     public GameObject canva;
     public GameObject canvaInteract;
+    public GameObject weapon;
     bool playerInRange = false;
 
     // Update is called once per frame
@@ -18,7 +19,7 @@ public class WeaponDetection : MonoBehaviour
         
         
         // Check if the player is in range and presses the E key to start dialogue
-        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !PlayerMovement.readyToDialgoue)
+        if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             // Start the dialogue
             canva.SetActive(true);
@@ -30,7 +31,7 @@ public class WeaponDetection : MonoBehaviour
             {
                 nextDialogue.StartDialogue();
             }
-            Destroy(GameObject.Find("WeaponPickup"));
+            Destroy(weapon);
             canvaInteract.SetActive(false);
         }
     }
