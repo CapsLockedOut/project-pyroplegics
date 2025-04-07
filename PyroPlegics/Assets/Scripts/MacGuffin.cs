@@ -30,6 +30,7 @@ public class MacGuffin : MonoBehaviour
         
         // 2) Print "hit"
         Debug.Log("hit");
+        UpdateHUD();
 
         // 3) Knock the other object away, if it has a Rigidbody
         Rigidbody otherRb = collision.rigidbody;
