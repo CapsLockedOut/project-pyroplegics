@@ -7391,15 +7391,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3186898839532243032, guid: 059c948fb8492b84496f9803391904c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.8
+      value: 70.5
       objectReference: {fileID: 0}
     - target: {fileID: 3186898839532243032, guid: 059c948fb8492b84496f9803391904c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 127.6
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3186898839532243032, guid: 059c948fb8492b84496f9803391904c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.2
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 3186898839532243032, guid: 059c948fb8492b84496f9803391904c8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9119,11 +9119,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1018536762742242882, guid: 5829065be6df94f35880a33ec930e363, type: 3}
       propertyPath: bounceMultiplier
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1455947927017968238, guid: 5829065be6df94f35880a33ec930e363, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1765058810494338770, guid: 5829065be6df94f35880a33ec930e363, type: 3}
       propertyPath: m_LocalScale.x
