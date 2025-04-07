@@ -506,6 +506,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3467216757799921290, guid: fa26bd135d4f4314e9f2ab71076d43c6, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bb027e03284a0b141bfe5e61bfb4ca7f, type: 2}
     - target: {fileID: 3670392896034010503, guid: fa26bd135d4f4314e9f2ab71076d43c6, type: 3}
       propertyPath: m_Name
       value: Dante_Paraplegic Variant
