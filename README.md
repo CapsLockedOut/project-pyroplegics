@@ -1,5 +1,5 @@
 # Project: PyroPlegics
-<br>A game made by:
+A game made by:
 - Benjamin Namayandeh
 - Aly Soliman
 - Web Nguyen
